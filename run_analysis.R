@@ -68,5 +68,5 @@ activity_mean_subject<-total_Base %>% group_by(activity_name,subject) %>%summari
 activity_mean_subject[,c("set","response")]<-NULL
 
 #save summary
-write.table(activity_mean_subject,"~/Downloads/activity_mean_subject.txt")
+write.table(activity_mean_subject,"~/Downloads/activity_mean_subject.txt",row.names = FALSE)
 
